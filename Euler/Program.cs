@@ -10,13 +10,26 @@ namespace Euler
     class Program
     {
         static void Main(string[] args)
-        {   
+        {
+            DateTime start = DateTime.Now;
             //Euler #5
             //Console.WriteLine("The Answer to the SmallestMultiple Euler problem: " + SmallestMultiple.solveSmallestMultiple());
             //Euler #6
             //Console.WriteLine("The Answer to the Sum Square Difference Euler problem: " + SumSquareDifference.solveSumSquareDifference());
             //Euler #7
             Console.WriteLine("The Answer to the 10001st Prime Euler problem: " + _10001stPrime.solve_10001stPrime());
+            DateTime end = DateTime.Now;
+            Console.WriteLine("Start Time: " + start);
+            Console.WriteLine("End Time  : " + end);
+            Console.WriteLine("Run Time  : " + (end - start));
+
+            if((end-start).Minutes > 1 )
+            {
+                Console.WriteLine("Your total run time was greater than one minture. You should try to optimize your solution");
+            }
+            else{
+                Console.WriteLine("Congratulations: Your total run time was less than one minture. Can you make irun fatser?");
+            }
             Console.ReadLine();
         }
 
