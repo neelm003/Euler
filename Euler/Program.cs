@@ -26,7 +26,7 @@ namespace Euler
 
             int[] state = { 1, 0, 1, 1, 0, 1, 0, 0};
             houses houseState = new houses();
-            int[] answerArr =  houseState.housesSolution(6, state);
+            int[] answerArr =  houseState.cellCompete(state, 6);
             Console.Write(" the answer: ");
             for (int i = 0; i < answerArr.Length; i++)
             {
