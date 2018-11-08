@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="solutions\10001stPrime.cs" />
     <Compile Include="solutions\GCD.cs" />
+    <Compile Include="solutions\houses.cs" />
     <Compile Include="solutions\LargestProductinSeries.cs" />
     <Compile Include="solutions\SmallestMultiple.cs" />
     <Compile Include="solutions\SumSquareDifference.cs" />

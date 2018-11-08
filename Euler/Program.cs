@@ -24,6 +24,16 @@ namespace Euler
             GCD  findGCD = new GCD();
             Console.WriteLine(" the answer: " + findGCD.generalizedGCD(5, arr));
 
+            int[] state = { 1, 0, 1, 1, 0, 1, 0, 0};
+            houses houseState = new houses();
+            int[] answerArr =  houseState.housesSolution(6, state);
+            Console.Write(" the answer: ");
+            for (int i = 0; i < answerArr.Length; i++)
+            {
+                Console.Write(answerArr[i]);
+            }
+            Console.Write(" \n");
+
 
             DateTime end = DateTime.Now;
             Console.WriteLine("Start Time: " + start);
