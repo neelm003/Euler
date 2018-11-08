@@ -1,7 +1,3 @@
-﻿// IMPORT LIBRARY PACKAGES NEEDED BY YOUR PROGRAM
-// SOME CLASSES WITHIN A PACKAGE MAY BE RESTRICTED
-// DEFINE ANY CLASS AND METHOD NEEDED
-// CLASS BEGINS, THIS CLASS IS REQUIRED
 using System;
 using System.Collections.Generic;
 
@@ -9,10 +5,8 @@ namespace Euler.solutions
 {
     public class GCD
     {
-        // METHOD SIGNATURE BEGINS, THIS METHOD IS REQUIRED
-        public int generalizedGCD(int num, int[] arr)
+        public int findGCD(int num, int[] arr)
         {
-            // WRITE YOUR CODE HERE
             int gcd = findSmallest(arr); //initially set to the smallest number in the array
             int[] factorsOfSmallestNum = findFactors(gcd);
             int temp = 0;
@@ -32,8 +26,6 @@ namespace Euler.solutions
             }
             return gcd;
         }
-        // METHOD SIGNATURE ENDS
-
         //Find the smallest number in an array
         private int findSmallest(int[] arr)
         {
