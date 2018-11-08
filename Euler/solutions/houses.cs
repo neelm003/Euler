@@ -32,11 +32,8 @@ namespace Euler.solutions
                             break;
                     }
                 }
-
                 state = newState.ToArray();
-
             }
-
             return state;
         }
     }
