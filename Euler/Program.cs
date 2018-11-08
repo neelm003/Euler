@@ -20,7 +20,7 @@ namespace Euler
             //Console.WriteLine("The Answer to the 10001st Prime Euler problem: " + _10001stPrime.solve_10001stPrime());
             //Euler #8
             //Console.WriteLine("The Answer to the Largest Product in Series Euler problem: " + LargestProductinSeries.solveLergestProductinSeries());
-            int[] arr = { 10, 20, 30, 50, 92 };
+            int[] arr = { 21, 39, 63, 99, 105 };
             GCD  findGCD = new GCD();
             Console.WriteLine(" the answer: " + findGCD.generalizedGCD(5, arr));
 

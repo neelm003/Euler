@@ -24,7 +24,8 @@ namespace Euler.solutions
                     {
                         if (arr[i] % factorsOfSmallestNum[j] == 0)
                         {
-                            gcd = factorsOfSmallestNum[j] < gcd ? factorsOfSmallestNum[j] : gcd;
+                            gcd = factorsOfSmallestNum[j];
+                            break;
                         }
                     }
                 }
