@@ -17,7 +17,9 @@ namespace Euler
             //Euler #6
             //Console.WriteLine("The Answer to the Sum Square Difference Euler problem: " + SumSquareDifference.solveSumSquareDifference());
             //Euler #7
-            Console.WriteLine("The Answer to the 10001st Prime Euler problem: " + _10001stPrime.solve_10001stPrime());
+            //Console.WriteLine("The Answer to the 10001st Prime Euler problem: " + _10001stPrime.solve_10001stPrime());
+            //Euler #8
+            Console.WriteLine("The Answer to the Largest Product in Series Euler problem: " + LargestProductinSeries.solveLergestProductinSeries());
             DateTime end = DateTime.Now;
             Console.WriteLine("Start Time: " + start);
             Console.WriteLine("End Time  : " + end);
