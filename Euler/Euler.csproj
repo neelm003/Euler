@@ -47,10 +47,12 @@
     <Compile Include="solutions\GCD.cs" />
     <Compile Include="solutions\houses.cs" />
     <Compile Include="solutions\LargestProductinSeries.cs" />
+    <Compile Include="solutions\PythagoreanTriplet.cs" />
     <Compile Include="solutions\SmallestMultiple.cs" />
     <Compile Include="solutions\SumSquareDifference.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

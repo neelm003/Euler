@@ -20,7 +20,7 @@ namespace Euler.solutions
             while(numOfPrimesFound < 10002)
             {
                 naturalNumber++;
-                if (isPrime(naturalNumber))
+                if (Utils.isPrime(naturalNumber))
                 {
                     numOfPrimesFound++;
                     if(numOfPrimesFound == 10001)
@@ -31,23 +31,6 @@ namespace Euler.solutions
             }
             return naturalNumber;
 
-        }
-        static bool isPrime(long numToCheck)
-        {
-            int num = 0;
-            for (int i = 1; i <= numToCheck; i++){
-                if(numToCheck % i == 0)
-                {
-                    num++;
-                }                
-            }
-            if (num == 2)
-            {
-                return true;
-            }else
-            {
-                return false;
-            }
         }
     }
 }
