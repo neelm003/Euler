@@ -19,42 +19,40 @@ namespace Euler.solutions
          * 821663704844031998900088952434506585412275886668811642717147992444292823086346567481391912316282458617866458359124566529476545682848912883142607690042
          * 242190226710556263211111093705442175069416589604080719840385096245544436298123098787992724428490918884580156166097919133875499200524063689912560717606
          * 0588611646710940507754100225698315520005593572972571636269561882670428252483600823257530420752963450
+         *
+         * Expected Answer = 23514624000
          */
-         public static int solveLergestProductinSeries()
+
+        public static long solveLergestProductinSeries(int setSize, string series)
         {
-            int answer = 0;
-            int temp = 0;
-            int length = 13;
+            long answer = 0;
+            long temp = 0;
             int start = 0;
-
-            string series = "731671765313306249192251196744265747423553491949349698352031277450632623957831801698480186947885184385861560789112949495459501737958" +
-                "3319528532088055111254069874715852386305071569329096329522744304355766896648950445244523161731856403098711121722383113622298934233803081353362766" +
-                "1428280644448664523874930358907296290491560440772390713810515859307960866701724271218839987979087922749219016997208880937766572733300105336788122" +
-                "0235421809751254540594752243525849077116705560136048395864467063244157221553975369781797784617406495514929086256932197846862248283972241375657056" +
-                "0574902614079729686524145351004748216637048440319989000889524345065854122758866688116427171479924442928230863465674813919123162824586178664583591" +
-                "2456652947654568284891288314260769004224219022671055626321111109370544217506941658960408071984038509624554443629812309878799272442849091888458015" +
-                "61660979191338754992005240636899125607176060588611646710940507754100225698315520005593572972571636269561882670428252483600823257530420752963450";
             
-            while(start < series.Length - length )
+            while(start < series.Length - (setSize - 1))
             {
-                temp = calcProduct(series.Substring(start, length));
+                if (!series.Substring(start, setSize).Contains("0"))
+                {
+                    temp = calcProduct(series.Substring(start, setSize));
 
-                if(temp > answer){
-                    answer = temp;
+                    if (temp > answer)
+                    {
+                        answer = temp;
+                    }
                 }
+
                 start++;
             }
             return answer;
         }
 
-        public static int calcProduct(string  substring)
+        public static long calcProduct(string  substring)
         {
             char[] arrToCalc = substring.ToCharArray();
-            int product = 1;
+            long product = 1;
             for(int i = 0; i < arrToCalc.Length; i++)
             {
-                string number = arrToCalc[i].ToString();
-                int temp = int.Parse(number);
+                int temp = int.Parse(arrToCalc[i].ToString());
                 product *= temp;
             }
             return product;
