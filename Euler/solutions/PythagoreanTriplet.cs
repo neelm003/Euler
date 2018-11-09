@@ -16,7 +16,7 @@ namespace Euler.solutions
      */
     static class PythagoreanTriplet
     {
-        static long sovleSpecialPythagoreanTriplet()
+        public static long sovleSpecialPythagoreanTriplet()
         {
             long answer = 0L;
 
